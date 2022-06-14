@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="8dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/trainFromTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTrainName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:text="Dibrugarh - New Delhi Rajdhani Express"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTrainName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="Train From"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtFromDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTrainName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtFrom"
+            android:maxLines="1"
+            android:text="DBRG"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTrainName"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtFromDesc"
+            android:layout_toRightOf="@id/txtFromDesc"
+            android:maxLines="1"
+            android:text="Train To"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtToDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTrainName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtTo"
+            android:maxLines="1"
+            android:text="NDLS"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtArrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFrom"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="Arriv Time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtArrivalDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFromDesc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtArrival"
+            android:maxLines="3"
+            android:text="13:55 +2 nights"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTo"
+            android:layout_alignStart="@+id/txtTo"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/txtArrivalDesc"
+            android:maxLines="1"
+            android:text="Dept Time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDepartureDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtToDesc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtDeparture"
+            android:maxLines="1"
+            android:text="19:25"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/txtArrival"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="Days Available"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDayDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtArrivalDesc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtDay"
+            android:maxLines="1"
+            android:text="Thursday"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/txtDay"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"
+            android:text="Class Available"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtClassDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDayDesc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/txtDay"
+            android:maxLines="1"
+            android:text="3A, 2A, 1A"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
